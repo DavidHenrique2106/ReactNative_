@@ -1,10 +1,11 @@
-import { StyleSheet, View, Text } from "react-native";
-
+import { StyleSheet, View, Text, Image } from "react-native"; 
+import profile from '../../assets/images/profile.png'; 
 export default function HomeScreen() {
   return (
     <View style={styles.container}>
       <View style={styles.titleContainer}>
-        <Text style={styles.title}>Unicap - Marcio - 21/02/2025</Text>
+        <Text style={styles.title}>Unicap - Marcio - 11/03/2025</Text>
+        <Image source={profile} style={styles.profileImage} /> 
       </View>
     </View>
   );
@@ -26,4 +27,10 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     color: "#000", 
   },
+  profileImage: {
+    width: 80, 
+    height: 100, 
+    borderRadius: 50, 
+    marginTop: 80, 
+  }
 });
