@@ -1,3 +1,5 @@
+import '../config/parseConfig';
+
 import { StyleSheet, View, Text, Image } from "react-native"; 
 import profile from '../../assets/images/profile.png'; 
 export default function HomeScreen() {
